@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;    text-align: center;
+}
+
+nav {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 40px;
+    justify-content: space-between;
+    background: #fff;
+    position: relative;
+    z-index: 200;
+    width: 100%;
+    top: 0;
+    height: 130px;
+  }
+  
+  nav .logo {
+    margin-right: 50px;
+}
+
+nav img {
+    height: 60px;
+    margin: 30px;
+}
+
+header img{
+    width: 50%;
+    height: auto;
+}
+
+
+main {
+    margin: 20px;
+    position: relative;
+}
+
+.menu {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f1f1f1;
+}
+
+.menu h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.opciones {
+    display: flex;
+    flex-direction:row;
+    gap: 40px;
+}
+
+.opciones a {
+    background-color: #ec0000;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    font-weight: 500;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.opciones a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 0.5s ease;
+}
+
+.opciones a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+aside.fotos {
+    width: 300px;
+    padding: 1rem;
+    background-color: none;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+aside.fotos p {
+    font-size: 30px;
+}
+
+
+.products {
+    display:flex;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+    margin-right: 20px;
+    align-content: start;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    min-height: 250px; 
+    max-height: 300px; 
+}
+
+.row img {
+    height: 140px;
+    margin: 20px 10px;
+
+}
+
+.tit {
+    text-align: center;
+}
+
+.tit p {
+    margin: 0 0 10px;
+}

@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/images.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/image (1).jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Manolo</title>
 </head>
 
@@ -18,47 +19,88 @@
         <div class="btns">
             <ul>
                 <li><a href="">INICIO</a></li>
-                <li><a href="">MENU</a></li>
+                <li><a href="menu.html">MENU</a></li>
                 <li><a href="">DELIVERY</a></li>
                 <li><a href="">TIENDAS</a></li>
-                <li><i class="fa-solid fa-magnifying-glass" style="color: #f50000;"></i></li>
+                <li><i class="fa-solid fa-magnifying-glass" style="color: #f50000; font-size: 30px;"></i></li>
             </ul>
         </div>
     </nav>
 
-    <section class="slider">
-        <img src="img/1920x1080_slide2.jpg" alt="">
-        <div class="btn2">
-            <a href="#">Menú</a>
-            <a href="#">Delivery</a>
+    <section class="main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img src="" alt="" class="image" />
+                <div class="image-data">
+                    <span class="text"></span>
+                    <h2>
+                        Encontra acá <br />
+                        los mejores churros de MDQ
+                    </h2>
+                    <a href="#" class="button">Nuestras Sedes</a>
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="" alt="" class="image" />
+                <div class="image-data">
+                    <span class="text">We really like what we do.</span>
+                    <h2>
+                        Coffee Beans with a <br />
+                        Perfect Aroma
+                    </h2>
+                    <a href="#" class="button">About Us</a>
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="" alt="" class="image" />
+                <div class="image-data">
+                    <span class="text">Making Our coffee with lover.</span>
+                    <h2>
+                        Alluring and Fragrant <br />
+                        Coffee Aroma
+                    </h2>
+                    <a href="#" class="button">About Us</a>
+                </div>
+            </div>
         </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
     </section>
 
-    <section class="conoce_mas">
-        <div class="text">
-        <h1>Bienvenidos!</h1>
-        <h2>Manolo, representa a una familia cuya tradición en la fabricación y venta de churros se remonta al año 30 del siglo. </h2>
-            <br>
-        <p>Manuel Benito y Claudia Ortiz,sus fundadores, formaron un afamilia que se desarrolló en nuestras costas. En Mar del Plata, Pablo Santurian y Manuel Benito, se establecieron en 1980 para dar inicio al proyecto que hoy es Manolo en Mar del Plata. Hoy, sus continuadores, nos sentimos orgullosos de nuestra tradición, y nos proyectamos al futuro, falices de recibir a clientes y amigos en nuestras instalaciones.</p>
-        </div>
-        <img src="img/763x848_img1.jpg" alt="">
-    </section>
+
+
 
     <section class="rec" id="">
         <div class="products">
             <div class="row">
-                <img class="card" src="img/btn_menu.png" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/256/756/756653.png" alt="" height="60px">
+                    <div class="tit">
+                    <h3>Calidad Premium</h3>
+                    <p> Cocinamos con materia prima de primera calidad, para que tus platos tengan los mejores sabores.</p>
+                </div>
             </div>
 
             <div class="row">
-                <img class="card" src="img/btn_delivery.png" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/512/522/522397.png" alt="" height="60px">
+                <div class="tit">
+                    <h3>Elaboración propia</h3>
+                    <p>Todos nuestros productos son especialmente elaborados por nosotros mismos, logrando sabores únicos.</p>
+                </div>
             </div>
 
             <div class="row">
-                <img class="card" src="img/btn_tienda.png" alt="">
+                <img src="img/—Pngtree—knife and fork vector illustration_5222460 (1).png" alt="" height="60px">
+                <div class="tit">
+                    <h3>Sabores para todos los gustos!</h3>
+                    <p>Nuestra amplia carta permite acercarnos al gusto especial de cada comensal.</p>
+                </div>
             </div>
         </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js.js"></script>
 </body>
 
 </html>
