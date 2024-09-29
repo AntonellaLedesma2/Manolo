@@ -26,7 +26,7 @@ nav {
     height: 130px;
   }
   
-  nav .logo {
+nav .logo {
     margin-right: 50px;
 }
 
@@ -34,6 +34,26 @@ nav img {
     height: 60px;
     margin: 30px;
 }
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+  }
+nav li {
+    margin-right: 40px;
+  }
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  
+nav a:hover {
+    color: black;
+    text-decoration: underline;
+  }
 
 header img{
     width: 50%;
@@ -54,93 +74,19 @@ main {
     border: 1px solid #f1f1f1;
 }
 
-.menu h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #000000;
-}
-
-.opciones {
-    display: flex;
-    flex-direction:row;
-    gap: 40px;
-}
-
-.opciones a {
-    background-color: #ec0000;
-    color: rgb(255, 255, 255);
-    padding: 30px;
-    font-weight: 500;
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
-    font-size: 19px;
-}
-
-.opciones a:hover {
-    background-color: #ffffff;
-    color: #000000;
-    transition: all 0.5s ease;
-}
-
-.opciones a{
+.menu a{
     text-decoration: none;
-    color: #ffffff;
 }
 
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+.menu h2{
+    text-align: right;
+    font-size: 2rem;
+    color: #000000;
 }
 
-aside.fotos {
-    width: 300px;
-    padding: 1rem;
-    background-color: none;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-aside.fotos p {
-    font-size: 30px;
-}
-
-
-.products {
-    display:flex;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    width: 100%;
-    margin-top: 20px;
-    margin-right: 20px;
-    align-content: start;
-}
-
-.row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    background-color: #ffffff;
-    min-height: 250px; 
-    max-height: 300px; 
-}
-
-.row img {
-    height: 140px;
-    margin: 20px 10px;
-
-}
-
-.tit {
-    text-align: center;
-}
-
-.tit p {
-    margin: 0 0 10px;
+.menu img{
+    align-content: left;
+    height: 250px;
+    width: auto;
+    border-radius: 50px;
 }

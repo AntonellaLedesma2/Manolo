@@ -3,296 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <link rel="stylesheet" href="menu.css">
+    <title>Cafeteria</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="logo">
+
+    <nav>
         <div class="logo">
-            <a href="manolo.html"><img src="img/logo-manolo.svg" alt=""></a>
+            <img src="img/logo-manolo.svg" alt="">
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars" style="color: #000; font-size: 30px;"></i>
+        </div>
+        <div class="btns" id="menu">
+            <ul>
+                <li><a href="">INICIO</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="sn.html">SOBRE NOSOTROS</a></li>
+            </ul>
         </div>
     </nav>
 
-    <header>
-        <img src="img/C22_CAFETERIA.jpg" alt="">
-    </header>
-
-
     <div class="container">
-        <aside class="fotos">
-            <div>
-                <p>Caliente</p>
+        <h1>Cafeteria</h1>
+        <div class="menu">
+            <div class="churros">
+                <h2>Churros y Facturas</h2>
+                <ul>
+                    <li>
+                        <div class="item">
+                            <span>Café o Cortado</span>
+                            <span>$2400</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <span>Café con crema</span>
+                            <span>$2600</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <span>Café con canela</span>
+                            <span>$2600</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <span>Café doble</span>
+                            <span>$3500</span>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </aside>
-    
-        <section class="rec">
-            <div class="products">
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Café o Cortado</h3>
-                        <p>$2400</p>
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Café con Crema</h3>
-                        <p>$2600</p>
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>café con Canela</h3>
-                        <p>$2600</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Café doble</h3>
-                        <p>$3500</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Cortado doble</h3>
-                        <p>$3500</p>
-                    </div>
-                </div>
+            <div class="image-churros">
+                <img src="img/churros menu.jpeg" alt="Churros">
             </div>
 
-            <div class="products">
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Café doble con Crema</h3>
-                        <p>$3500</p>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>CAfé con Crema y Canela</h3>
-                        <p>$2600</p>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Exprimido</h3>
-                        <h4>Café con Leche</h4>
-                        <p>$3500</p>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Té</h3>
-                        <p>$2400</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Té con Leche</h3>
-                        <p>$3500</p>
-                    </div>
-                </div>
-                
+            <div class="sandwiches">
+                <ul>
+                    <li>
+                        <div class="item">
+                            <span>Cortado doble</span>
+                            <span>$3500</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <span>Café doble con crema</span>
+                            <span>$3600</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <span>Café con crema y canela</span>
+                            <span>$2600</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <span>Café con leche</span>
+                            <span>$3500</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="image-sandwich">
+                <img src="img/sanguche de miga.jpeg" alt="Sandwich">
             </div>
 
-            <div class="products">
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Subamrino</h3>
-                        <p>$3500</p>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Chocolate Español</h3>
-                        <h4>Chocolate Artesanal de contextura espesa</h4>
-                        <p>$4700</p>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Chocolate Francés</h3>
-                        <h4>Chocolate Artesanal de contextura liviana</h4>
-                        <p>$4700</p>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Chocolate con Crema</h3>
-                        <p>$5000</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Chocolate Mini</h3>
-                        <p>$3500</p>
-                    </div>
-                </div>
-                
+            <div class="sandwiches">
+                <ul>
+                    <li>
+                        <div class="item">
+                            <span>Té</span>
+                            <span>$2400</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <span>Té con lehce</span>
+                            <span>$3500</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <span>Submarino</span>
+                            <span>$3500</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <span>Chocolate Español</span>
+                            <span>$3500</span>
+                        </div>
+                        <p>Chocolate Artesanal de contextura espesa</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="image-sandwich">
+                <img src="img/sanguche de miga.jpeg" alt="Sandwich">
             </div>
 
-            <div class="products">
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Chocolate en Jarrita</h3>
-                        <p>$4000</p>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Chocolatada</h3>
-                        <h4>Fría / Caliente</h4>
-                        <p>$3600</p>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Café Irlandés</h3>
-                        <h4>Whsky, Crema y Canela</h4>
-                        <p>$4700</p>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Café Africano</h3>
-                        <h4>Café, Chocolate rallado y Crema</h4>
-                        <p>$4700</p>
-                    </div>
-                </div>
 
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Café Francés</h3>
-                        <h4>Cointreau, Crema, Canela y Chocolate rallado</h4>
-                        <p>$4700</p>
-                    </div>
-                </div>
-                
+            <div class="sandwiches">
+                <ul>
+                    <li>
+                        <div class="item">
+                            <span>Chocolate Francés</span>
+                            <span>$4700</span>
+                        </div>
+                        <p>Chocolate Artesanal de contextura liviana</p>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <span>Chocolate con crema</span>
+                            <span>$5000</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <span>Chocolate Mini</span>
+                            <span>$3500</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <span>Chocolate en Jarrita</span>
+                            <span>$4000</span>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </section>
-    </div>
-
-    <br>
-    <br>
-
-    <div class="container">
-        <aside class="fotos">
-            <div>
-                <p>Frío</p>
-            </div>
-        </aside>
-    
-        <section class="rec">
-            <div class="products">
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Chocolatada</h3>
-                        <h4>Fría / Caliente</h4>
-                        <p>$3600</p>
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Capuccino</h3>
-                        <h4>Café, Leche, Chocolate, Crema y Canela</h4>
-                        <p>$4700</p>
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Café Vienes</h3>
-                        <h4>Café, Helado y Crema</h4>
-                        <p>$4700</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Limonada</h3>
-                        <h4>Vaso 500 ml</h4>
-                        <p>$2600</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Exprimido</h3>
-                        <h4>Naranja / Pomelo / Combinado</h4>
-                        <p>$4300</p>
-                    </div>
-                </div>
+            <div class="image-sandwich">
+                <img src="img/sanguche de miga.jpeg" alt="Sandwich">
             </div>
 
-            <div class="products">
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Licuado un solo sabor</h3>
-                        <h4>Banana / Durazno / Ananá <br> / Frutilla / Manzana</h4>
-                        <p>$4300</p>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Licuado Combinado</h3>
-                        <h4>Banana / Durazno / Ananá <br> / Frutilla / Manzana</h4>
-                        <p>$4300</p>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <img src="img/image-removebg-preview (2).png" alt="" height="60px">
-                    <div class="tit">
-                        <h3>Milk Shake</h3>
-                        <h4>Helado batido con leche</h4>
-                        <p>$5800</p>
-                    </div>
-                </div>                
+            <div class="sandwiches">
+                <ul>
+                    <li>
+                        <div class="item">
+                            <span>Chocolatada</span>
+                            <span>$3600</span>
+                        </div>
+                        <p>Fria / Caliente</p>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <span>Cappuccino</span>
+                            <span>$4700</span>
+                        </div>
+                        <p>Café, Leche, Chocolate, Crema y Canela</p>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <span>Café Irlandés</span>
+                            <span>$4700</span>
+                        </div>
+                        <p>Whisky, Crema y Canela</p>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <span>Café Africano</span>
+                            <span>$4700</span>
+                        </div>
+                        <p>Café, Chocolate rallado y Crema</p>
+                    </li>
+                </ul>
             </div>
-        </section>
+            <div class="image-sandwich">
+                <img src="img/sanguche de miga.jpeg" alt="Sandwich">
+            </div>
+
+            <div class="sandwiches">
+                <ul>
+                    <li>
+                        <div class="item">
+                            <span>Café Francés</span>
+                            <span>$4700</span>
+                        </div>
+                        <p>Cointreau, Crema, Canela y Chocolate rallado</p>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <span>Café Vienes</span>
+                            <span>$4700</span>
+                        </div>
+                        <p>Café, Helado y Crema</p>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <span>Limonada</span>
+                            <span>$2600</span>
+                        </div>
+                        <p>Vaso 500 ml</p>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <span>Exprimido</span>
+                            <span>$4300</span>
+                        </div>
+                        <p>Naranja/ Pomelo/ Combinado</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="image-sandwich">
+                <img src="img/sanguche de miga.jpeg" alt="Sandwich">
+            </div>
+
+            <div class="sandwiches">
+                <ul>
+                    <li>
+                        <div class="item">
+                            <span>Licuado un solo sabor</span>
+                            <span>$4300</span>
+                        </div>
+                        <p>Banana/ Durazno/ Ananá/ Frutilla/ Manzana</p>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <span>Licuado combinado</span>
+                            <span>$4300</span>
+                        </div>
+                        <p>Banana/ Durazno/ Ananá/ Frutilla/ Manzana</p>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <span>Milk Shake</span>
+                            <span>$5800</span>
+                        </div>
+                        <p>Helado batido con leche</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="image-sandwich">
+                <img src="img/sanguche de miga.jpeg" alt="Sandwich">
+            </div>
+
+
+
+        </div>
     </div>
 </body>
 </html>

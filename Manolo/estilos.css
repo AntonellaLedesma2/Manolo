@@ -1,17 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
-*{
+* {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 nav {
   align-items: center;
-  align-content: center;
   display: flex;
-  flex-wrap: wrap;
-  margin-right: 40px;
   justify-content: space-between;
   background: #fff;
   position: fixed;
@@ -22,25 +20,32 @@ nav {
 }
 
 nav .logo {
-  margin-right: 50px;
+  margin-left: 20px;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  margin: 0;
 }
 
 nav ul {
   display: flex;
   list-style: none;
+  margin-right: 20px;
 }
+
 nav li {
   margin-right: 40px;
 }
+
 nav a {
-  margin-right: 15px;
   text-decoration: none;
   color: black;
   font-size: 20px;
 }
 
 nav a:hover {
-  color: black;
   text-decoration: underline;
 }
 
@@ -48,6 +53,33 @@ nav img {
   height: 60px;
   margin: 30px;
 }
+
+@media (max-width: 768px) {
+  nav .btns ul {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  nav .btns ul li {
+    margin: 15px 0;
+  }
+
+  .menu-icon {
+    display: block;
+    margin-left: 100px;
+  }
+
+  .btns.active ul {
+    display: flex;
+  }
+}
+
 
 /*slider*/
 
@@ -67,7 +99,6 @@ nav img {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.479);
   z-index: 10;
 }
 .slide .image {
@@ -90,9 +121,10 @@ nav img {
   color: #fff;
 }
 .image-data h2 {
-  font-size: 45px;
-  font-weight: 800;
-  color: #ffffff;
+  font-size: 50px;
+  font-weight: 900;
+  text-decoration:dashed;
+  color: #fe0000;
 }
 a.button {
   display: inline-block;
@@ -197,42 +229,122 @@ a.button:hover {
 
 
 .products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 10px; 
-    margin: 100px;
-  }
-  
-  .row {
-    position: relative;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px 30px 10px 32px;
-    background-color: #f9f9f9;
-    cursor: pointer;
-  }
-  
-
-  .row img {
-    align-content: center;
-  }
-
-.titulo {
-    padding: 10px 15px; 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 10px; 
+  margin: 100px;
 }
 
-.titulo h2 {
-    font-size: 22px;
-    line-height: 25px;
-    height: auto;
-    margin: 0 0 10px; 
-    font-weight: 600;
-    text-align: left;
-    white-space: pre-line;
+.row {
+  position: relative;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #f9f9f9;
 }
 
-.titulo h4 {
-    font-size: 16px;
-    line-height: 22px;
-    margin: 10px 0px; 
-    padding: 0; 
+
+.row img {
+  display: inline;
+  line-height: 24px;
+  text-align: left;
 }
+
+.tit {
+  padding: 10px 15px; 
+}
+
+.tit h3 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  line-height: 32px;
+  margin: 0px 0px 8px;
+  text-align: left;
+}
+
+.tit p {
+  line-height: 25px;
+  margin: 10px 0px; 
+  padding: 0; 
+}
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 560px;
+    width: 820px;
+}
+
+
+.mapouter {
+   display: flex;
+   justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.delivery{
+   text-align: center;
+}
+
+.delivery h1{
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 40px;
+}
+.button{
+    display: inline;
+    margin: 20px;
+}
+
+.button button{
+    height: 45px;
+    margin: 25px;
+    width: 115px;
+    font-size: 30px;
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: #dc0101;
+    border: 0;
+}
+.button button:hover{
+    background-color: #ff9c9c;
+    color: #010101;
+}
+.tex{
+    margin-top: 30px;
+}
+.tex h1{
+   text-align: center;
+}
+.tex h2{
+    text-align: center;
+    color: #6d6c6c;
+ }
+
+ 
+ .nr{
+  text-align: center;
+ }
+
+ .nr h3{
+  text-align: center;
+  color: #6d6c6c;
+ }
+
+ .nr svg{
+  height: 30px;
+  margin: 10px;
+
+ }
+
+ footer{
+  background-color: #8e2c2c;
+  color: #f9f9f9;
+ }
+
+ footer a{
+  color: #e0e0e0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+ }
